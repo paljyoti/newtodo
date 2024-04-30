@@ -19,7 +19,7 @@ const RegisterPage = () => {
       }
       const data = await  axios({
         method: "post",
-        url:" http://localhost:5000/api/register",
+        url:" https://newtodobackend-production.up.railway.app/api/register",
         data: {
           name:name,
           email:email,

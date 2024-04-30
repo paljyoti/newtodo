@@ -23,7 +23,7 @@ function App() {
     try {
       const response = await axios({
         method: "get",
-        url: "http://localhost:5000/checkAuth",
+        url: "https://newtodobackend-production.up.railway.app/checkAuth",
         withCredentials: true,
       });
 
@@ -43,7 +43,7 @@ function App() {
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:5000/api/createtodo",
+        url: "https://newtodobackend-production.up.railway.app/api/createtodo",
         data: {
           title: title,
           description: description,
@@ -69,7 +69,7 @@ function App() {
     try {
       const response = await axios({
         method: "delete",
-        url: `http://localhost:5000/api/deleteTodo/${id}`,
+        url: `https://newtodobackend-production.up.railway.app/api/deleteTodo/${id}`,
         withCredentials: true,
       });
 
@@ -104,7 +104,7 @@ function App() {
     try {
       const response = await axios({
         method: "get",
-        url: "http://localhost:5000/api/getTodo",
+        url: "https://newtodobackend-production.up.railway.app/api/getTodo",
         withCredentials: true,
       });
 
@@ -122,7 +122,7 @@ function App() {
     try {
       const response = await axios({
         method: "put",
-        url: `http://localhost:5000/api/updateTodo?id=${updatetodoId}`,
+        url: `https://newtodobackend-production.up.railway.app/api/updateTodo?id=${updatetodoId}`,
         data: {
           title: title,
           description: description,
@@ -152,7 +152,7 @@ function App() {
     try {
       const response = await axios({
         method: "patch",
-        url: `http://localhost:5000/api/changestatus/${id}`,
+        url: `https://newtodobackend-production.up.railway.app/api/changestatus/${id}`,
         data: {
           status: status,
         },
@@ -177,7 +177,7 @@ function App() {
       // If keyword is not empty, fetch todo data based on keyword
       axios({
         method: "get",
-        url: `http://localhost:5000/api/searchTodo?keyword=${keyword}`,
+        url: `https://newtodobackend-production.up.railway.app/api/searchTodo?keyword=${keyword}`,
         withCredentials: true,
       })
         .then((res) => {
@@ -195,7 +195,7 @@ function App() {
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:5000/api/logout",
+        url: "https://newtodobackend-production.up.railway.app/api/logout",
         withCredentials: true,
       });
 
