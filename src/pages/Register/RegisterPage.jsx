@@ -19,7 +19,7 @@ const RegisterPage = () => {
       }
       const data = await  axios({
         method: "post",
-        url:" https://newtodobackend-production.up.railway.app/api/register",
+        url:" https://newtodobackend.onrender.com/api/register",
         data: {
           name:name,
           email:email,
